@@ -9,9 +9,6 @@ Built as a **SportsOrca Full Stack Developer take-home assignment**.
 **Frontend:**  
 https://subreddit-vibe-check-frontend.onrender.com
 
-**Backend API:**  
-https://subreddit-vibe-check-bzpm.onrender.com
-
 **GitHub Repository:**  
 https://github.com/Teju0427/subreddit-vibe-check
 
@@ -410,22 +407,6 @@ The following are potential improvements for future versions:
 The public deployment currently uses mock data to provide a reliable, credential-free demonstration.
 
 The application architecture supports switching to live Reddit data through backend environment configuration without exposing Reddit credentials to the frontend.
-
----
-
-## 📎 Submission Links
-
-### 🌐 Live Demo
-
-https://subreddit-vibe-check-frontend.onrender.com
-
-### 💻 GitHub Repository
-
-https://github.com/Teju0427/subreddit-vibe-check
-
-### ⚙️ Backend API
-
-https://subreddit-vibe-check-bzpm.onrender.com
 
 ---
 
