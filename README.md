@@ -215,3 +215,74 @@ update `CORS_ORIGIN` on the backend to match your deployed frontend's origin.
   server-side to reduce Reddit API calls under repeated searches.
 - **Automated tests** — unit tests for `sentiment.js`'s classification logic
   and the backend's validation/error-handling middleware.
+
+
+
+
+
+
+
+
+
+
+
+
+  import pypandoc
+from pathlib import Path
+
+readme = r"""# The Subreddit Vibe Check
+
+A full-stack web application that analyzes the mood of a subreddit by fetching its top 50 **Hot** posts and performing client-side sentiment analysis on their titles.
+
+Built as a **SportsOrca Full Stack Developer take-home assignment**.
+
+## Live Demo
+
+**Frontend:**  
+https://subreddit-vibe-check-frontend.onrender.com
+
+**Backend API:**  
+https://subreddit-vibe-check-bzpm.onrender.com
+
+**Source Code:**  
+https://github.com/Teju0427/subreddit-vibe-check
+
+> **Demo note:** The deployed version currently runs in development mock-data mode. This keeps the public demo reliable without exposing Reddit API credentials. The application also supports Reddit OAuth2 and live Reddit data when valid backend credentials are configured.
+
+---
+
+## Overview
+
+**The Subreddit Vibe Check** turns a subreddit into a simple, visual sentiment dashboard.
+
+A user can enter a subreddit such as `nba` or `r/nba`, fetch the top 50 Hot posts, analyze the sentiment of their titles, and explore the results through summary metrics, charts, filters, sorting, and links to the original Reddit posts.
+
+The project is designed around a clear separation of responsibilities:
+
+```text
+                    ┌─────────────────────┐
+                    │     React Frontend  │
+                    │                     │
+                    │  • User input       │
+                    │  • Sentiment        │
+                    │  • Charts           │
+                    │  • Filters          │
+                    │  • Sorting          │
+                    └──────────┬──────────┘
+                               │
+                               │ GET /api/subreddit/:subreddit/hot
+                               ▼
+                    ┌─────────────────────┐
+                    │   Express Backend   │
+                    │                     │
+                    │  • Validation       │
+                    │  • API handling     │
+                    │  • OAuth2           │
+                    │  • Error handling   │
+                    └──────────┬──────────┘
+                               │
+                    ┌──────────▼──────────┐
+                    │ Reddit Data API     │
+                    │        or           │
+                    │ Mock Data Service   │
+                    └─────────────────────┘
