@@ -1,0 +1,24 @@
+{
+  "name": "subreddit-vibe-check-backend",
+  "version": "1.0.0",
+  "description": "Backend service for The Subreddit Vibe Check — handles Reddit OAuth, fetches hot posts, and serves clean JSON to the frontend.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+  "start": "node src/server.js",
+  "dev": "node --watch src/server.js",
+  "test": "vitest run"
+},
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.11"
+  }
+}

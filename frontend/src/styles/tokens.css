@@ -1,0 +1,44 @@
+:root {
+  /* Surfaces — cool, blue-tinted dark, not pure black */
+  --bg: #0b0d12;
+  --surface: #12151c;
+  --surface-2: #171b24;
+  --surface-3: #1e2230;
+  --border: #262b38;
+  --border-soft: #1c202b;
+
+  /* Text */
+  --text-primary: #e9ecf3;
+  --text-secondary: #9aa3b8;
+  --text-muted: #626b80;
+
+  /* Primary accent — teal, used for interactive elements */
+  --accent: #2dd4bf;
+  --accent-strong: #14b8a6;
+  --accent-soft: rgba(45, 212, 191, 0.12);
+
+  /* Sentiment palette — the signature system of the whole app */
+  --positive: #34d399;
+  --positive-soft: rgba(52, 211, 153, 0.14);
+  --neutral: #94a3b8;
+  --neutral-soft: rgba(148, 163, 184, 0.14);
+  --negative: #fb7185;
+  --negative-soft: rgba(251, 113, 133, 0.14);
+
+  /* Status */
+  --warning: #f5a623;
+  --warning-soft: rgba(245, 166, 35, 0.14);
+
+  /* Type */
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Radius + shadow */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.02) inset, 0 8px 24px rgba(0, 0, 0, 0.28);
+
+  --max-width: 1180px;
+}
